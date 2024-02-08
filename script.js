@@ -29,15 +29,6 @@ function showMessage(response) {
 
   if (response === "Yes") {
     // Remove name message and no button
-
-    document.getElementById("question").textContent =
-      "Meatballs?";
-
-    if (response === "No") {
-      document.getElementsByClassName("image")[0].src = "images/funnyvalentines.jpeg";}
-
-
-    if (response === "Yes") {
     document.getElementById("name").remove();
     document.getElementById("no-button").remove();
 
