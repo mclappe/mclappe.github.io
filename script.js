@@ -40,6 +40,6 @@ function showMessage(response) {
     document.getElementsByClassName("image")[0].src = "images/dance.gif";
 
     // Remove yes button
-    document.getElementById("yesButton").remove();}
+    document.getElementById("yesButton").remove();
   }
 }
