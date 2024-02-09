@@ -28,18 +28,26 @@ function showMessage(response) {
   }
 
   if (response === "Yes") {
-    // Remove name message and no button
-    document.getElementById("name").remove();
-    document.getElementById("no-button").remove();
-
-    // Update text content, show message, and change image source to "dance.gif"
     const yesMessage = document.getElementById("question");
     yesMessage.textContent = "LET'S GOOOOO, meatballs?😘😘";
     yesMessage.style.display = "block";
     yesMessage.style.fontStyle = "normal";
     document.getElementsByClassName("image")[0].src = "images/buffalomeatballs.jpg";
 
-    // Remove yes button
-    document.getElementById("yesButton").remove();
+    if (response === "Yes") {
+      // Remove name message and no button
+      document.getElementById("name").remove();
+      document.getElementById("no-button").remove();
+
+      // Update text content, show message, and change image source to "dance.gif"
+      const yesMessage = document.getElementById("question");
+      yesMessage.textContent = "LET'S GOOOOO, ily?😘😘";
+      yesMessage.style.display = "block";
+      yesMessage.style.fontStyle = "normal";
+      document.getElementsByClassName("image")[0].src = "images/dance.gif";
+
+      // Remove yes button
+      document.getElementById("yesButton").remove();
+    }
   }
 }
